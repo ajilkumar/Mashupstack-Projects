@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.loginpage{
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100vh;
+}
+
+div.left{
+  background-image: linear-gradient(#aabbf6, #ffb6c1ab);
+  height: 50%;
+}
+div.right{
+  height: 50%;
+  padding-left: 10%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input[type="email"], input[type="password"], button{
+  height: 30px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+button{
+  background-color: #f25b29;
+  color: #ffffff;
+  border: none;
+  font-size: 15px;
+}
+h1{
+  padding-bottom: 10px;
+}
+.rem label{
+  font-weight: normal;
+}
+label{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.rem{
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px){
+  .left{
+    display: none;
+  }
+  .right{
+    margin-bottom: 20%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="loginpage">
+    <div class="left"></div>
+    <div class="right">
+      <form>
+        <h1 style="color: red;">Login Form</h1>
+          <label class="email" for="email">Email:</label>
+          <input id="email" type="email" name="email" required>
+          <label class="password" for="password">Password:</label>
+          <input id="password" type="password" name="password" required>
+          <div class="rem">
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <label class="checkbox" for="checkbox">Remember me</label>
+          </div>
+          <button type="submit">Login</button>
+      </form>
+    </div>  
+  </div>
+</body>
+  </html>
