@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+</head>
+<body>
+  <h1>Contact US</h1>
+  <a href="html_exam.html"><button type="button">Home page</button></a>
+  <hr>
+  <form>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="number">Mobile Number</label>
+    <input type="tel" id="number" name="number" maxlength="10" pattern="[0-9]{10}"><br><br>
+    <label for="communication">Type of communication:</label>
+    <select id="communication" name="communication">
+    <option value="sales">Sales</option>
+    <option value="service">Services</option>
+    <option value="enquiry">Enquiry</option>
+    <option value="advertisement">Advertisement</option>
+    <option value="complaint" selected>Complaint</option>
+    </select><br>
+    <p><label for="description">Description:</label></p>
+    <textarea rows="5" cols="50" id="description" name="description"></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+  
+</body>
+</html>
