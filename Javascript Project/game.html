@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Water Gun Game</title>
+</head>
+<body>
+  <script>
+    
+    let userInput = prompt("Choose any of the following: (snake, water, gun)")
+   let options = ["snake", "water", "gun"]
+   let computerInput  = options[Math.floor(Math.random()*3)]
+   //console.log(computerInput)
+
+   if (userInput === computerInput){
+    alert("It's a Draw")
+   }
+   else if(userInput == "snake"){
+    if (computerInput == "water"){
+      alert("Computer chose water. YOU WIN :)")
+    }
+    else {
+      alert("Computer chose gun. YOU LOOSE :(")
+    }
+   }
+   else if(userInput == "water"){
+    if (computerInput == "snake"){
+      alert("Computer chose snake. YOU LOOSE :(")
+    }
+    else {
+      alert("Computer chose gun. YOU WIN :)")
+    }
+   }
+   else if(userInput == "gun"){
+    if (computerInput == "snake"){
+      alert("Computer chose snake. YOU WIN :)")
+    }
+    else {
+      alert("Computer chose water. YOU LOOSE :(")
+    }
+   }
+   else if (userInput != "snake" || userInput != "water" || userInput != "gun"){
+    alert("Enter a valid choice")
+   }
+  </script>
+</body>
+</html>
